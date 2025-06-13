@@ -83,12 +83,7 @@ public class WeaponManager : MonoBehaviour
         {
             switchButton.SetActive(false);
         }
-
-        // Comprobamos si el jugador ha pulsado el botón 'Intercambiar arma' y, en caso afirmativo, cambiamos de arma
-        if (SimpleInput.GetButtonDown("Switch"))
-        {
-            SwitchActiveSlot();
-        }
+        
 
     }
 

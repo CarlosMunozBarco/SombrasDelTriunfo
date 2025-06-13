@@ -146,6 +146,16 @@ public class WeaponScript : MonoBehaviour
                 Reload();
             }
 
+            // Comprobamos si el jugador ha pulsado el botón 'Intercambiar arma' y, en caso afirmativo, cambiamos de arma
+            if (SimpleInput.GetButtonDown("Switch"))
+            {
+                if (isADS)
+                {
+                    ExitADS();
+                }
+                WeaponManager.Instance.SwitchActiveSlot();
+            }
+
         }
     }
 
@@ -257,15 +267,16 @@ public class WeaponScript : MonoBehaviour
     {
         // Se obtiene el número de balas que quedan en el cargador y se calcula cuantas balas necesitamos para llenarlo
         int bulletsNeeded = magazineSize - bulletsLeft;
+        int bulletsLeftInReserve = WeaponManager.Instance.CheckAmmoLeftFor(thisWeaponModel);
         // Recargamos el cargador tanto como sea posible, teniendo en cuenta las balas que nos quedan en la reserva
-        if (WeaponManager.Instance.CheckAmmoLeftFor(thisWeaponModel) > magazineSize)
+        if (bulletsLeftInReserve >= bulletsNeeded)
         {
             bulletsLeft = magazineSize;
             WeaponManager.Instance.DecreaseTotalAmmo(bulletsNeeded, thisWeaponModel);
         }
         else
         {
-            int bulletsLeftInReserve = WeaponManager.Instance.CheckAmmoLeftFor(thisWeaponModel);
+            
             bulletsLeft += bulletsLeftInReserve;
             WeaponManager.Instance.DecreaseTotalAmmo(bulletsLeftInReserve, thisWeaponModel);
         }

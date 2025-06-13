@@ -265,8 +265,9 @@ public class WeaponScript : MonoBehaviour
         }
         else
         {
-            bulletsLeft = WeaponManager.Instance.CheckAmmoLeftFor(thisWeaponModel);
-            WeaponManager.Instance.DecreaseTotalAmmo(bulletsNeeded, thisWeaponModel);
+            int bulletsLeftInReserve = WeaponManager.Instance.CheckAmmoLeftFor(thisWeaponModel);
+            bulletsLeft += bulletsLeftInReserve;
+            WeaponManager.Instance.DecreaseTotalAmmo(bulletsLeftInReserve, thisWeaponModel);
         }
         
         // Indicamos que ya no estamos recargando

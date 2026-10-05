@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "com.cesium.unity": "1.15.5",
-    "com.google.ar.core.arfoundation.extensions": "file:C:/Users/carlo/Downloads/arcore-unity-extensions-1.48.0-arf6.tgz",
+    "com.coplaydev.unity-mcp": "https://github.com/CoplayDev/unity-mcp.git?path=/MCPForUnity#main",
+    "com.google.ar.core.arfoundation.extensions": "file:arcore-unity-extensions-1.48.0-arf6.tgz",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.ai.navigation": "2.0.6",
     "com.unity.collab-proxy": "2.7.1",

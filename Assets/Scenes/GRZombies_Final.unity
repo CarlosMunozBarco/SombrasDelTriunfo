@@ -510,9 +510,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _altitudeOffset: NaN
-  _latitude: 37.18932609095232
-  _longitude: -3.6068930058099964
-  _altitude: 0
+  _latitude: 37.423394719505595
+  _longitude: -122.0855362889151
+  _altitude: 11.499999867752194
   _altitudeType: 1
   _useEditorAltitudeOverride: 0
   _editorAltitudeOverride: -66.68641155399382
@@ -10378,9 +10378,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _altitudeOffset: NaN
-  _latitude: 37.18390798160524
-  _longitude: -3.6019511924132646
-  _altitude: 0
+  _latitude: 37.417976834813544
+  _longitude: -122.08057914411708
+  _altitude: 11.499999270774424
   _altitudeType: 1
   _useEditorAltitudeOverride: 0
   _editorAltitudeOverride: -66.79032684117556
@@ -13616,7 +13616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _showCreditsOnScreen: 1
   _tilesetSource: 1
-  _url: https://tile.googleapis.com/v1/3dtiles/root.json?key=AIzaSyCU95NUy8epNUjw_PYPwW2ZU_5atXxDMLE
+  _url: https://tile.googleapis.com/v1/3dtiles/root.json
   _ionAssetID: 0
   _ionAccessToken: 
   _ionServer: {fileID: 0}
@@ -13722,9 +13722,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _altitudeOffset: NaN
-  _latitude: 37.18813748174714
-  _longitude: -3.6043796272603372
-  _altitude: 0.000000001862645149230957
+  _latitude: 37.42220615980276
+  _longitude: -122.08301511214268
+  _altitude: 11.500000000931323
   _altitudeType: 1
   _useEditorAltitudeOverride: 0
   _editorAltitudeOverride: -66.67807608563453
@@ -19377,9 +19377,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _altitudeOffset: NaN
-  _latitude: 37.18444748683787
-  _longitude: -3.6004978897325675
-  _altitude: 0.000000003725290298461914
+  _latitude: 37.418516317368294
+  _longitude: -122.0791213330056
+  _altitude: 11.499999357387424
   _altitudeType: 1
   _useEditorAltitudeOverride: 0
   _editorAltitudeOverride: 11.5
